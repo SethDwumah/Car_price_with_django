@@ -1,0 +1,11 @@
+{% extends "car_price/base.html" %}
+
+{% block content %}
+<h1>Car Price Prediction</h1>
+<h1>The price of the car is ${{ prediction_results }}</h1>
+
+
+</div>
+<a href=" {% url 'user-input' %} "><button class="card-btn btn btn-warning text-body-tertiary fs-3 fw-bolder">Predict Again</button></a>
+</div>
+{% endblock %}
