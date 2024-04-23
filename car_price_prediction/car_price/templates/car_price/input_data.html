@@ -6,6 +6,6 @@
 <form method="POST" class="post-form" >
     {% csrf_token %}
     {{ form.as_p }}
-    <a href="{% url 'show-results' %}"><input type="button" value="Predict"></a>
+    <a href="{% url 'show-results' %}"><button type="submit" class="save btn btn-default">Predict</button></a>
 </form>
 {% endblock %}

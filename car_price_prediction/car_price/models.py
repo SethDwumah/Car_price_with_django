@@ -119,7 +119,7 @@ class CarPrice(models.Model):
     highway_mpg = models.IntegerField()
     city_mpg = models.IntegerField()
     popularity = models.IntegerField()
-    price = models.IntegerField(null=True)
+    price = models.IntegerField()
 
 
     def __str__(self):
